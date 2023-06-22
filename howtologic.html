@@ -1,0 +1,221 @@
+ <!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <title>Moon's Space - How to Logic</title>
+    <style>
+      
+    html,body,h1.h2,h3,h4,h5,h6 {font-family: 'Syne', sans-serif;}
+    
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
+    }
+
+    .floating-box {
+      float: left;
+      width: 250px;
+      height: 20px;
+      margin: 3px;
+    }
+
+    </style>
+   </head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+      <a href="https://moonspacelinguistics.github.io/index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+      <a href="https://moonspacelinguistics.github.io/index.html#aboutme" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Me</a>
+      <a href="https://moonspacelinguistics.github.io/linguisticsdatasci.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Applied Linguistics</a>
+      <a href="https://moonspacelinguistics.github.io/publications.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Research</a>
+      <a href="https://moonspacelinguistics.github.io/musings.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Musings</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/index.html#aboutme">About Me</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/linguisticsdatasci.html">Applied Linguistics</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/publications.html">Research & Publications</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/musings.html">Musings</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+<div class="w3-container w3-content w3-left w3-padding-64" style="max-width:100%">
+  <h1>How to use logic to improve EFL students' writing</h1>
+  <p><i>This article originally appeared on 20 June 2019 at ALT Training Online <a href>http://alttrainingonline.blogspot.com/</a></i></p>
+    <div class="image-container">
+      <img src="https://moonlinguistics.w3spaces.com/what-logic-spongebob.jpg" width="30%" height="30%" >
+      <p><i>...because logic</i></p>
+    </div>
+
+  <p>It all began with a Facebook post. Well, perhaps even before the Facebook post.</p>
+  <p>I have lived in Japan for a total of six years so far, and had only started teaching English in classrooms three years ago. Even before starting a formal career in teaching, I found myself correcting English essays from children of acquaintances and entertaining odd requests from time to time. Then, I started noticing something peculiar. Occasionally, I would receive essays that were written in flawless English, but I had no idea what they were talking about. How is that even possible? The grammar was perfect! But the sentences had no apparent logical link with each other, and the clauses were put together as if the author was talking in circles or even broken spirals. It reminded me of sample speech patterns of patients with schizophrenia or cognitive dissociation in psychology textbooks. How should I even begin to correct them? </p>
+  <p>Thus began my quest to help English learners straighten out their writing.</p>
+  <p>A couple of years ago, I joined a senior high school in Osaka as an ALT for the first time. Among my other classes, I was tasked with teaching 6 classes of about 25 students on how to write English essays, all by myself. I was anxious and excited at the prospect. The students had up to that point only learnt how to make sentences. The earlier encounters with “flawless but undecipherable” essays stood out in my mind. How do I help students learn how to write clearly? Out of ideas and with no other recourse, I turned to Facebook.</p>
+  <p>One of my friends, upon reading my bewildered post, suggested that I give explicit instructions in the target logic (reason being that most students in Japan are not exposed to logic in their classes), and pointed me to some resources. From there, I went on to build a 1-year writing course, through trial-and-error, with explicit instructions in logic built into the class. Inevitably, being a newly-minted ALT, I made mistakes and some activities fell flat on their faces. However, there were also elements that worked out very well. In fact, so well that towards the end of the academic year, I had students who reportedly passed Eiken level 2 as they got nearly full marks in the writing section, despite failing the Reading and Listening section. Back then, I had no idea that this hardly ever happens until I told my spouse (a JTE, or Japanese teacher of English, in another school). He had looked at me, his mouth agape, and said in wonder, “That has never happened before”.</p>
+  <p>Although I have only anecdotal evidence that incorporating logic into a writing course works, I suppose what I did is still worth sharing. So for those who are interested, I have outlined four basic steps (with some sample activities thrown in as well) to help students learn how to build an argument in English writing. Although there are many ways to build an argument, the most basic style of writing, when stripped down to its barest form, requires the writer to follow the “If A, then B. Therefore C.” pattern (also called Chain Reasoning). The key aim here, therefore, is to use the concept of “cause and effect” as a foundation, and then use scaffolding activities to help students learn how to use chain reasoning to write coherently, while avoiding complicated meta-language or brain-twisting Aristotelian syllogisms.</p>
+  <p>These four steps can either be expanded into a full semester course with lots of practice and examples, or condensed into one lesson, depending on the level of the students and the aim of the writing course. Teachers can also consider including higher-order thinking strategies such as inductive/deductive syllogisms, logical fallacies or introduce different types of evidence in advanced writing courses. By teaching students how to build stronger arguments, we also teach students how to think more critically; and this, I believe, should be the cornerstone of a balanced curriculum.</p>
+
+  <h2>How to logic 101</h2>
+
+  <h3> Step 1: Start with the importance of time sequence in cause and effect.</h3>
+
+  <b>Example activity:</b>
+  <p>Introduce the following two clauses:</p>
+    <p style="text-indent: 40px">(A) <i>"The window was broken."</i></p>
+    <p style="text-indent: 40px">(B) <i>"The boy threw a ball."</i></p>
+  <p>Draw a timeline on the board and ask students to indicate whether A or B happens first.</p>
+  <p>Then, show the following sentences:</p>
+    <p style="text-indent: 40px">Sentence 1: <i>"The window was broken <b>because</b> the boy threw a ball at it."</i></p>
+    <p style="text-indent: 40px">Sentence 2: <i>"The boy threw a ball at the window <b>because</b> it was broken."</i></p>
+  <p>Emphasize that sentence 2 is incorrect due to the wrong order of cause and effect.</p>
+  <p>You can reiterate the time-sensitivity of cause and effect with several other (obvious) examples, depending on the level of your students. You may also consider using games or create worksheets to emphasize this.</p>
+  <p><i>Suggested grammar: “A because B”, and “A, so B”.</i></p>
+
+  <h3>Step 2: Introduce and go through the following logical errors related to cause & effect:</h3>
+  <h4>
+    <p style="text-indent: 40px">1. Circular reasoning</p>
+    <p style="text-indent: 40px">2. No relationship in cause and effect</p>
+    <p style="text-indent: 40px">3. Cause and effect are reversed</p>
+    <p style="text-indent: 40px">4. Insufficient explanation</p>
+  </h4>
+
+  <b>Example activity:</b></br>
+  <p>Use obvious examples and ask students what is wrong with the sentences. Here are some examples of sentences with their corresponding logical errors:</p>
+  <div style= "text-indent: -40px; padding-left: 40px;">
+    <p style="margin-left: 40px">(A) <i>"Fast food is unhealthy because fast food is bad for your health."</i></br>(Circular reasoning)</p>
+    <p style="margin-left: 40px">(B) <i>"The sakura trees are blooming because it is raining."</i></br> (No relationship in cause and effect)</p>
+    <p style="margin-left: 40px">(C) <i>"The students passed their Eiken test because the teacher is happy."</i></br> (Cause and effect are reversed)</p>
+    <p style="margin-left: 40px">(D) <i>"I am poor because I eat fast food."</i></br> (Insufficient explanation; this can also fall under error 2 or even 3, but I’ll be using this as an example to introduce chain reasoning later in Step 4).</p>
+  </div>
+
+  <p>Among the four types of errors, circular reasoning is a very common writing pattern among Japanese students, in part due to a lack of control and vocabulary in English. I found the following example (adapted from a student’s essay, and modified for dramatic and comic effect) to be very helpful in driving home what circular reasoning is:</p>
+  <div style= "margin-left: 40px;">
+    <i>"I agree that it is important to learn a foreign language. First, if I learn a foreign language, I can speak a foreign language. If I can speak a foreign language, I can speak to foreigners. If I do not learn a foreign language, I cannot speak to foreigners. For example, because I speak a foreign language, I can speak to foreigners.</i></p>
+  </div>
+
+  <p>To help students recognize and avoid circular reasoning, I find it useful to ask students to think in very concrete terms, by using specific situations, rather than thinking with abstract concepts.</p>
+
+  <h3>Step 3: Introduce hypothetical scenarios.</h3>
+
+  <b>Example activity:</b></p>
+  <p>Introduce the following two clauses:</p>
+    <p style="text-indent: 40px">(A) <i>"The window will be broken.</i></p>
+    <p style="text-indent: 40px">(B) <i>"The boy throws a ball.</i></p>
+  <p>Draw a timeline on the board, this time with a mark in the middle indicating “now”. Ask students to indicate where on the timeline should A or B happen in the future.</p>
+  <p>Then, show the following sentences:</p>
+    <p style="text-indent: 40px">Sentence 1: <i>"<b>If</b> the boy throws a ball, the window <b>will</b> be broken."</i></p>
+    <p style="text-indent: 40px">Sentence 2: <i>"<b>If</b> the window is broken, the boy <b>will</b> throw a ball."</i></p>
+  <p>Emphasize that sentence 2 is incorrect due to the wrong order of cause and effect.</p>
+  <p>Since “If A, then B. Therefore C.” is the most basic pattern in building an argument, using the grammar “If…, (s) will…” is probably the easiest way for students to string ideas together in an argumentative essay.</p>
+  <p><i>Suggested grammar: “If A, (s) will B”.</i></p>
+
+  <h3>Step 4: Introduce chain reasoning.</h3>
+  <b>Example activity:</b>
+  <p>Introduce the following sentence and ask students why does the author think this way:</p>
+    <p style="text-indent: 40px">Sentence: <i>"I am poor because I eat fast food."</i></p>
+  <p>Then, show the following paragraph:</p>
+    <div style="margin-left: 40px">
+      <i>"Fast food is more expensive than home-cooked food. If I eat fast food everyday, it will cost me a lot of money. Therefore, I will become poor if I eat fast food everyday."</i>
+    </div>
+
+  <p>Break down the paragraph in the following way:</p>
+
+  <h4>Pattern 1</h4>
+  <div style="margin-left: 40px">
+    <p><i>"Fast food is more expensive than home-cooked food."</i>&nbsp&nbsp&nbsp(Link 1)</p>
+    <p style="text-indent: 90px"><b>&dArr;</b></p>
+    <p><i>"If I eat fast food everyday,"</i>&nbsp&nbsp&nbsp(Link 2)</p>
+    <p style="text-indent: 90px"><b>&dArr;</b></p>
+    <p><i>"it will cost me a lot of money."</i>&nbsp&nbsp&nbsp(Link 3)</p>
+    <p style="text-indent: 90px"><b>&dArr;</b></p>
+    <p><i>"Therefore, I will become poor if I eat fast food everyday.</i> (Conclusion)</p>
+  </div>
+
+  <p>Teachers may consider using a variety of examples, or introduce different grammar that follow the same thought pattern. Another pattern is to move the conclusion up in the paragraph and make it the topic sentence:</p>
+  <h4>Pattern 2</h4>
+  <div style="margin-left: 40px">
+    <p><i>"I will become poor if I eat fast food everyday.</i>&nbsp&nbsp&nbsp(Topic sentence)</p>
+    <p style="text-indent: 90px"><b>&dArr;</b></p>
+    <p><i>"This is because fast food is more expensive than home-cooked food.</i>&nbsp&nbsp&nbsp(Link 1)</p>
+    <p style="text-indent: 90px"><b>&dArr;</b></p>
+    <p><i>"If I eat fast food everyday,"</i>&nbsp&nbsp&nbsp(Link 2)</p>
+    <p style="text-indent: 90px"><b>&dArr;</b></p>
+    <p><i>"it will cost me a lot of money."</i>&nbsp&nbsp&nbsp(Link 3)</p>
+  </div>
+  <p>This second pattern is useful in writing courses where students are taught that topic sentences come at the top of paragraphs. Students can then practice building longer chains of supporting sentences into their paragraphs and work towards writing a full essay.</p>
+<!-- End of main content -->
+</div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/musings.html">&#8962;</a>
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/tokenisetextinpython.html">2</a>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4><a href="#">Back to top</a></h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <div class="floating-box">
+        Made with <a href="https://www.w3schools.com/spaces" target="_blank">W3Schools Spaces</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      </div>
+      <div class="floating-box">
+        Image attributions: <a href="https://openai.com/dall-e-2/">Dall-E-2</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+</body>
+</html>
