@@ -1,1 +1,2 @@
-This repository is just a website to help me keep track of projects and stuff that I have been doing all in one place :)
+This repository hosts my website to help me keep track of the projects and other related work that I have been working on all in one place.
+To see the website, go to https://moonspacelinguistics.github.io/
