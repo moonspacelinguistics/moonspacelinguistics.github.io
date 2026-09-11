@@ -1,17 +1,17 @@
- <!DOCTYPE html>
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <title>Moon's Space - Research</title>
     <style>
-      
-    html,body,h1.h2,h3,h4,h5,h6 {font-family: 'Syne', sans-serif;}
-    
+
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Syne', sans-serif;}
+
     .w3-sidebar {
       z-index: 3;
       width: 250px;
@@ -25,6 +25,41 @@
       width: 250px;
       height: 20px;
       margin: 3px;
+    }
+
+    /* ---- README content, scoped so nothing here leaks into the rest of the site ---- */
+    .readme{max-width:52rem; line-height:1.65; font-size:16px}
+    .readme h1{font-size:2rem; line-height:1.25; margin:0 0 .6rem; letter-spacing:-.015em}
+    .readme h2{font-size:1.35rem; margin:2.6rem 0 .85rem; padding-bottom:.35rem;
+               border-bottom:1px solid #e0e0e0}
+    .readme p{margin:0 0 1rem}
+    .readme ul{margin:0 0 1rem; padding-left:1.4rem}
+    .readme li{margin:.3rem 0}
+    .readme a{color:#000; text-decoration:underline}
+    .readme a:hover{color:#616161}
+    .readme code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+                 font-size:.875em; background:#f1f3f5; padding:.15em .38em; border-radius:6px}
+    .readme pre{background:#f6f8fa; border:1px solid #d1d9e0; border-radius:8px;
+                padding:1rem; overflow-x:auto; margin:0 0 1.2rem}
+    .readme pre code{background:none; padding:0; font-size:.85rem; line-height:1.55}
+    .readme .lede,.readme .run{color:#616161}
+    .readme .run{font-size:.95rem}
+    .readme .note{background:#f5f5f5; border-left:4px solid #616161;
+                  border-radius:0 8px 8px 0; padding:.9rem 1rem; margin:0 0 1.2rem}
+    .readme .note p:last-child{margin-bottom:0}
+    .readme .ph{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.85em;
+                color:#8a6100; background:rgba(212,167,44,.16); border:1px dashed rgba(212,167,44,.6);
+                border-radius:5px; padding:.05em .35em; white-space:nowrap}
+    .readme var{font-style:italic; font-family:Georgia,"Times New Roman",serif}
+    .readme .eq{margin:1.4rem 0; padding:1rem .5rem; overflow-x:auto; text-align:center;
+                border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0}
+    .readme math{font-size:1.15em}
+
+    @media print{
+      .w3-top,.w3-sidebar,#myFooter,#myOverlay{display:none !important}
+      .w3-main{margin-left:0 !important}
+      .readme{max-width:none}
+      .readme pre,.readme .note,.readme .eq{break-inside:avoid}
     }
 
     </style>
@@ -52,8 +87,8 @@
   <h4 class="w3-bar-item"><b>Menu</b></h4>
   <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/index.html#aboutme">About Me</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="#">Applied Linguistics</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/publications.html">Research & Publications</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/coursematerial">Course Material</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/publications.html">Research &amp; Publications</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/coursematerial.html">Course Material</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/musings.html">Blog Posts</a>
 </nav>
 
@@ -63,142 +98,183 @@
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
 
-<div class="w3-container w3-content w3-left w3-padding-64" style="max-width:100%">
-  # Impact of repeat test-takers on difficulty estimates from online vocabulary testing platforms
+<div class="w3-container w3-padding-64">
+  <article class="readme">
 
-Code and data for the paper presented at JALT Vocab-SIG 2026 Symposium at Kyushu Sangyo 
-University, 26 Sep 2026, Fukuoka, Japan.
+    <header>
+      <h1>Impact of repeat test-takers on difficulty estimates from online vocabulary testing platforms</h1>
+      <p class="lede">
+        Code and data for the paper presented at JALT Vocab-SIG 2026 Symposium at Kyushu Sangyo
+        University, <time datetime="2026-09-26">26 Sep 2026</time>, Fukuoka, Japan.
+      </p>
+    </header>
 
-Open, large-scale vocabulary testing platforms tend to produce very sparse response
-matrices in which a minority of test-takers contribute a disproportionate share
-of observations. This repository contains the preprocessing pipeline for those
-human observations from an online testing platform, a simulation study with known 
-parameters under comparable sparsity and repeat-testing conditions, and the resulting
-difficulty estimates for 2,999 flemmas.
+    <p>
+      Open, large-scale vocabulary testing platforms tend to produce very sparse response matrices
+      in which a minority of test-takers contribute a disproportionate share of observations. This
+      repository contains the preprocessing pipeline for those human observations from an online
+      testing platform, a simulation study with known parameters under comparable sparsity and
+      repeat-testing conditions, and the resulting difficulty estimates for 2,999 flemmas.
+    </p>
 
-**Findings:** The results suggest that 1-IRT-modeling using a combination of JLM and 
-Bayesian estimation from the package bigIRT (version 0.1.8) (Driver & Tomasik, 2023) 
-produces item estimates that might be robust to repeat test-takers. Thus, a ranked flemma-based 
-wordlist for Japanese EFL learners using large-scale observations extracted from an online 
-vocabulary testing platform  [vlt.carleton.ca](https://vlt.carleton.ca/) (McLean & Raine, 2019) 
-is presented here.
+    <div class="note">
+      <p>
+        <strong>Findings:</strong> The results suggest that 1-IRT-modeling using a combination of
+        JLM and Bayesian estimation from the package bigIRT (version 0.1.8) (Driver &amp; Tomasik,
+        2023) produces item estimates that might be robust to repeat test-takers. Thus, a ranked
+        flemma-based wordlist for Japanese EFL learners using large-scale observations extracted
+        from an online vocabulary testing platform
+        <a href="https://vlt.carleton.ca/">vlt.carleton.ca</a> (McLean &amp; Raine, 2019) is
+        presented here.
+      </p>
+    </div>
 
-A copy of this repository and the resulting wordlist is also archived at
-[OSF](https://doi.org/<osf-doi>).
+    <p>
+      A copy of this repository and the resulting wordlist is also archived at
+      <!-- TODO: replace <osf-doi> with the registered DOI suffix -->
+      <a href="https://doi.org/&lt;osf-doi&gt;">OSF</a> (<span class="ph">&lt;osf-doi&gt;</span>).
+    </p>
 
-## Contents
-
-```
-├── 01_preprocessing/    # raw platform exports → analysis-ready .csv
+    <h2 id="contents">Contents</h2>
+<pre><code>├── 01_preprocessing/    # raw platform exports → analysis-ready .csv
 ├── 02_simulation/       # sparse-matrix simulation with known parameters
 ├── 03_estimation/       # bigIRT calibration
-└── 04_wordlist/         # 2,999 flemmas with difficulty estimates (.xlsx)
-```
+└── 04_wordlist/         # 2,999 flemmas with difficulty estimates (.xlsx)</code></pre>
 
-## Requirements
+    <h2 id="requirements">Requirements</h2>
+    <ul>
+      <li>R &gt;= 4.6.1</li>
+      <li>Rtools45</li>
+      <li>CRAN packages: dplyr, ggplot2, reshape2, rmarkdown, stringi, igraph, data.table</li>
+      <li>
+        <a href="https://github.com/cdriveraus/bigIRT">bigIRT</a> (Driver &amp; Tomasik, 2023),
+        which is not on CRAN:
+      </li>
+    </ul>
+<pre><code>remotes::install_github("cdriveraus/bigIRT")</code></pre>
+    <p>
+      Exact package versions are pinned in <code>renv.lock</code>; run
+      <code>renv::restore()</code> to reproduce the environment.
+    </p>
 
-- R >= 4.6.1
-- Rtools45
-- CRAN packages: dplyr, ggplot2, reshape2, rmarkdown, stringi, igraph, data.table
-- [bigIRT](https://github.com/cdriveraus/bigIRT) (Driver & Tomasik, 2023),
-  which is not on CRAN:
+    <h2 id="preprocessing">1. Data preprocessing</h2>
+    <p>
+      Human observations were extracted from the response database of the vocabulary testing
+      platform at <a href="https://vlt.carleton.ca/">vlt.carleton.ca</a>. The initial dataset
+      contained 1.3 million responses to 8149 test items and 45,965 logged sessions. Raw exports
+      were filtered for invalid responses by removing responses (rows) that contained any
+      non-Japanese script, items (columns) with response patterns that were either all “1”s or all
+      “0”s, and responses (rows) with average reaction times that fell outside of the
+      3-to-14-second range. Unlinked items that form fragmented “islands” of observations that
+      could lead to biased estimates were also removed prior to running bigIRT on the dataset.
+    </p>
+    <p class="run">Run: <code>01_preprocessing/<span class="ph">&lt;filename&gt;</span>.Rmd</code></p>
+    <p>For transparency and analytical integrity, the implementation details are viewable in .Rmd.</p>
 
-```r
-  remotes::install_github("cdriveraus/bigIRT")
-```
+    <h2 id="simulation">2. Simulation with repeat test-takers</h2>
+    <p>
+      Simulates a response matrix with known item and person parameters at 99% missingness with
+      repeat test-takers contributing approximately 30% of all observations. The dichotomous
+      observations were drawn from a probability matrix described by the 1-IRT (or Rasch) model
+    </p>
 
-Exact package versions are pinned in `renv.lock`; run `renv::restore()` to
-reproduce the environment.
+    <div class="eq">
+      <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>P</mi><mo form="prefix" stretchy="false">(</mo>
+        <msub><mi>X</mi><mrow><mi>n</mi><mi>i</mi></mrow></msub>
+        <mo>=</mo><mn>1</mn>
+        <mo>&#x2223;</mo>
+        <msub><mi>&#x3B8;</mi><mi>n</mi></msub><mo>,</mo>
+        <msub><mi>&#x3B2;</mi><mi>i</mi></msub>
+        <mo form="postfix" stretchy="false">)</mo>
+        <mo>=</mo>
+        <mfrac>
+          <mrow>
+            <mi>exp</mi><mo>&#x2061;</mo><mo stretchy="false">(</mo>
+            <msub><mi>&#x3B8;</mi><mi>n</mi></msub><mo>&#x2212;</mo>
+            <msub><mi>&#x3B2;</mi><mi>i</mi></msub><mo stretchy="false">)</mo>
+          </mrow>
+          <mrow>
+            <mn>1</mn><mo>+</mo>
+            <mi>exp</mi><mo>&#x2061;</mo><mo stretchy="false">(</mo>
+            <msub><mi>&#x3B8;</mi><mi>n</mi></msub><mo>&#x2212;</mo>
+            <msub><mi>&#x3B2;</mi><mi>i</mi></msub><mo stretchy="false">)</mo>
+          </mrow>
+        </mfrac>
+      </math>
+    </div>
 
-## 1. Data preprocessing
+    <p>
+      where the person ability <var>θ</var> and item difficulty <var>β</var> follow a Normal
+      distribution ∼ <var>N</var>(0,&nbsp;1). The seed is set at the top of the script
+      (<code>set.seed(<span class="ph">&lt;n&gt;</span>)</code>); results are reproducible without
+      re-running the human-data pipeline.
+    </p>
+    <p class="run">Run: <code>02_simulation/<span class="ph">&lt;filename&gt;</span>.Rmd</code></p>
 
-Human observations were extracted from the response database of the vocabulary
-testing platform at [vlt.carleton.ca](https://vlt.carleton.ca/). The initial 
-dataset contained 1.3 million responses to 8149 test items and 45,965 logged 
-sessions. Raw exports were filtered for invalid responses by removing 
-responses (rows) that contained any non-Japanese script, items (columns) with 
-response patterns that were either all “1”s or all “0”s, and responses (rows) 
-with average reaction times that fell outside of the 3-to-14-second range. 
-Unlinked items that form fragmented “islands” of observations that could lead to 
-biased estimates were also removed prior to running bigIRT on the dataset.
+    <h2 id="estimation">3. Estimating difficulty with bigIRT</h2>
+    <p>
+      Difficulty was estimated with a 1PL/Rasch model fitted in bigIRT. Because the Rasch
+      difficulty scale is identified only up to an additive constant, estimates are anchored by
+      fixing mean item difficulty to 0.
+      <strong>Higher logits indicate greater difficulty.</strong>
+    </p>
+    <p class="run">Run: <code>03_estimation/<span class="ph">&lt;filename&gt;</span>.Rmd</code></p>
 
-Run: `01_preprocessing/<filename>.Rmd`
+    <h2 id="wordlist">4. Flemma list with Japanese EFL difficulty indices</h2>
+    <p>
+      Difficulty estimates for 2,999 flemmas for L1 Japanese EFL learners. A <em>flemma</em> groups
+      a lemma with its inflected forms but not its derivational family, so
+      <code>walk / walks / walked / walking</code> is one unit while <code>walker</code> is
+      separate. Flemmas were derived from <span class="ph">&lt;source list/corpus&gt;</span>.
+    </p>
+    <p>
+      Available as <code>04_wordlist/<span class="ph">&lt;filename&gt;</span>.xlsx</code> and as a
+      read-only
+      <!-- TODO: replace <view-only-link> with the published Google Sheet URL -->
+      <a href="&lt;view-only-link&gt;">Google Sheet</a>.
+    </p>
+    <p>Columns: <span class="ph">&lt;flemma | difficulty_logit | SE | n_responses | ...&gt;</span></p>
 
-For transparency and analytical integrity, the implementation details are viewable in .Rmd.
-
-## 2. Simulation with repeat test-takers
-
-Simulates a response matrix with known item and person parameters at 99% missingness 
-with repeat test-takers contributing approximately 30% of all observations. 
-The dichotomous observations were drawn from a probability matrix 
-described by the 1-IRT (or Rasch) model
-P(X_{ni} = 1 \mid \theta_n, \beta_i) = \frac{\exp(\theta_n - \beta_i)}{1 + \exp(\theta_n - \beta_i)}
-where the person ability \theta and item difficulty \beta follow a Normal distribution ~ N(0,1).
-The seed is set at the top of the script (`set.seed(<n>)`);
-results are reproducible without re-running the human-data pipeline.
-
-Run: `02_simulation/<filename>.Rmd`
-
-## 3. Estimating difficulty with bigIRT
-
-Difficulty was estimated with a 1PL/Rasch model fitted in bigIRT.
-Because the Rasch difficulty scale is identified only up to an additive
-constant, estimates are anchored by fixing mean item
-difficulty to 0. **Higher logits indicate greater difficulty.**
-
-Run: `03_estimation/<filename>.Rmd`
-
-## 4. Flemma list with Japanese EFL difficulty indices
-
-Difficulty estimates for 2,999 flemmas for L1 Japanese EFL learners. A *flemma*
-groups a lemma with its inflected forms but not its derivational family, so
-`walk / walks / walked / walking` is one unit while `walker` is separate.
-Flemmas were derived from <source list/corpus>.
-
-Available as `04_wordlist/<filename>.xlsx` and as a read-only
-[Google Sheet](<view-only-link>).
-
-Columns: <flemma | difficulty_logit | SE | n_responses | ...>
-
-## Citation
-
-```bibtex
-@inproceedings{<key>,
-  author    = {<authors>},
+    <h2 id="citation">Citation</h2>
+<pre><code>@inproceedings{&lt;key&gt;,
+  author    = {&lt;authors&gt;},
   title     = {Impact of repeat test-takers on difficulty estimates from
                online vocabulary testing platforms},
-  booktitle = {<proceedings>},
+  booktitle = {&lt;proceedings&gt;},
   year      = {2026}
-}
-```
+}</code></pre>
 
-## License
+    <h2 id="license">License</h2>
+    <p>
+      Code: <span class="ph">&lt;MIT / GPL-3&gt;</span>.
+      Data and wordlist: <span class="ph">&lt;CC BY 4.0&gt;</span>.
+    </p>
 
-Code: <MIT / GPL-3>. Data and wordlist: <CC BY 4.0>.
+    <h2 id="contact">Contact</h2>
+    <!-- TODO: once known, wrap the address as <a href="mailto:…"> -->
+    <p><span class="ph">&lt;name&gt;</span> — <span class="ph">&lt;email&gt;</span></p>
 
-## Contact
-
-<name> — <email>
-
+  </article>
 </div>
 <!-- End of main content -->
 
- 
+
 <!-- Second Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center">
     <div class="w3-quarter">
     </div>
   </div>
-  
+
   <footer id="myFooter">
     <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h4><a href="#">Back to top</a></h4>  
+      <h4><a href="#">Back to top</a></h4>
       <a href="https://moonspacelinguistics.github.io/coursematerial.html">Course material</a> © 2025 by <a href="https://www.researchgate.net/profile/Liang-Ye-Tan">Tan Liang Ye</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
     </div>
 
     <div class="w3-container w3-theme-l1">
       <div class="floating-box">
-        Made with <a href="https://www.w3schools.com/spaces" target="_blank">W3Schools Spaces</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        Made with <a href="https://www.w3schools.com/spaces" target="_blank">W3Schools Spaces</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </div>
       <div class="floating-box">
         Image attributions: <a href="https://openai.com/dall-e-2/">Dall-E-2</a>
