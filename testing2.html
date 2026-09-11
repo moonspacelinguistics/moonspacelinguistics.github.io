@@ -74,7 +74,37 @@
 </head>
 <body>
 <main class="wrap">
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+      <a href="https://moonspacelinguistics.github.io/index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+      <a href="https://moonspacelinguistics.github.io/index.html#aboutme" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Me</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Applied Linguistics</a>
+      <a href="https://moonspacelinguistics.github.io/publications.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Research</a>
+      <a href="https://moonspacelinguistics.github.io/coursematerial.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Course Material</a>
+      <a href="https://moonspacelinguistics.github.io/musings.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Blog Posts</a>
+  </div>
+</div>
 
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/index.html#aboutme">About Me</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Applied Linguistics</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/publications.html">Research & Publications</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/coursematerial">Course Material</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/musings.html">Blog Posts</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
   <header>
     <h1>Impact of repeat test-takers on difficulty estimates from online vocabulary testing platforms</h1>
     <p class="lede">
