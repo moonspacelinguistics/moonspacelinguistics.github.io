@@ -1,65 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+ <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-    <title>Moon's Space - Research</title>
+    <title>Moon's Space - Material</title>
     <style>
-
-    html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Syne', sans-serif;}
-
-    body {background-color: #0d1117;}
-
-    :root { --rail: 60px; --rail-open: 250px; }
-
+      
+    html,body,h1.h2,h3,h4,h5,h6 {font-family: 'Syne', sans-serif;}
+    
     .w3-sidebar {
       z-index: 3;
-      width: var(--rail-open);
+      width: 250px;
       top: 43px;
       bottom: 0;
       height: inherit;
-      overflow-x: hidden;   /* w3.css sets overflow:auto — without this the 250px
-                               labels force a horizontal scrollbar at 60px wide */
-      overflow-y: auto;
-    }
-
-    /* ---- Sidebar row layout: fixed icon column + indented label ---- */
-    #mySidebar .sb-item{
-      display: flex;
-      align-items: center;
-      padding: 10px 0;
-      white-space: nowrap;
-    }
-    #mySidebar .sb-icon{ flex: 0 0 var(--rail); text-align: center; }
-    #mySidebar .sb-text{ padding-left: 20px; }          /* the indent */
-    #mySidebar .sb-head .sb-text{ padding-left: 0; }    /* heading sits flush */
-    #mySidebar .sb-head{ padding: 16px 0; }
-
-    /* ---- Hover-to-expand, desktop only. 993px matches w3.css's own breakpoint ---- */
-    @media (min-width: 993px){
-      .w3-main{ margin-left: var(--rail); }
-
-      #mySidebar{
-        width: var(--rail);
-        transition: width .25s ease, box-shadow .25s ease;
-      }
-      #mySidebar:hover,
-      #mySidebar:focus-within{
-        width: var(--rail-open);
-        box-shadow: 0 0 24px rgba(0,0,0,.45);
-      }
-
-      #mySidebar .sb-text{ opacity: 0; transition: opacity .2s ease .05s; }
-      #mySidebar:hover .sb-text,
-      #mySidebar:focus-within .sb-text{ opacity: 1; }
-    }
-
-    @media (prefers-reduced-motion: reduce){
-      #mySidebar, #mySidebar .sb-text{ transition: none; }
     }
 
     .floating-box {
@@ -67,59 +25,6 @@
       width: 250px;
       height: 20px;
       margin: 3px;
-    }
-
-    /* ---- Main content: GitHub-dark, scoped to #content so it can't leak into
-           the navbar, sidebar or footer ---- */
-    #content{
-      --gh-bg:#0d1117; --gh-fg:#e6edf3; --gh-muted:#9198a1; --gh-border:#3d444d;
-      --gh-code-bg:#161b22; --gh-link:#4493f8;
-      --gh-note-bg:#121d2f; --gh-note-border:#316dca;
-      --gh-ph-fg:#d29922; --gh-ph-bg:rgba(187,128,9,.15); --gh-ph-border:rgba(187,128,9,.45);
-      background:var(--gh-bg);
-      color:var(--gh-fg);
-      color-scheme:dark;
-      min-height:calc(100vh - 43px);
-    }
-    .readme{max-width:52rem; line-height:1.65; font-size:16px}
-    .readme h1{font-size:2rem; line-height:1.25; margin:0 0 .6rem; letter-spacing:-.015em}
-    .readme h2{font-size:1.35rem; margin:2.6rem 0 .85rem; padding-bottom:.35rem;
-               border-bottom:1px solid var(--gh-border)}
-    .readme p{margin:0 0 1rem}
-    .readme ul{margin:0 0 1rem; padding-left:1.4rem}
-    .readme li{margin:.3rem 0}
-    .readme a{color:var(--gh-link); text-decoration:none}
-    .readme a:hover,.readme a:focus-visible{text-decoration:underline}
-    .readme code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
-                 font-size:.875em; background:var(--gh-code-bg); padding:.15em .38em; border-radius:6px}
-    .readme pre{background:var(--gh-code-bg); border:1px solid var(--gh-border); border-radius:8px;
-                padding:1rem; overflow-x:auto; margin:0 0 1.2rem}
-    .readme pre code{background:none; padding:0; font-size:.85rem; line-height:1.55}
-    .readme .lede,.readme .run{color:var(--gh-muted)}
-    .readme .run{font-size:.95rem}
-    .readme .note{background:var(--gh-note-bg); border-left:4px solid var(--gh-note-border);
-                  border-radius:0 8px 8px 0; padding:.9rem 1rem; margin:0 0 1.2rem}
-    .readme .note p:last-child{margin-bottom:0}
-    .readme .ph{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.85em;
-                color:var(--gh-ph-fg); background:var(--gh-ph-bg);
-                border:1px dashed var(--gh-ph-border); border-radius:5px;
-                padding:.05em .35em; white-space:nowrap}
-    .readme var{font-style:italic; font-family:Georgia,"Times New Roman",serif}
-    .readme .eq{margin:1.4rem 0; padding:1rem .5rem; overflow-x:auto; text-align:center;
-                border-top:1px solid var(--gh-border); border-bottom:1px solid var(--gh-border)}
-    .readme math{font-size:1.15em}
-
-    @media print{
-      body{background:#fff}
-      .w3-top,.w3-sidebar,#myFooter,#myOverlay{display:none !important}
-      .w3-main{margin-left:0 !important}
-      #content{background:#fff; color:#000; min-height:0; padding:0 !important}
-      .readme{max-width:none}
-      .readme a{color:#000}
-      .readme code,.readme pre{background:#f4f4f4; border-color:#bbb; color:#000}
-      .readme .note{background:#f4f4f4; border-left-color:#666}
-      .readme .lede,.readme .run{color:#444}
-      .readme pre,.readme .note,.readme .eq{break-inside:avoid}
     }
 
     </style>
@@ -132,9 +37,157 @@
       <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
       <a href="https://moonspacelinguistics.github.io/index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
       <a href="https://moonspacelinguistics.github.io/index.html#aboutme" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Me</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Applied Linguistics</a>
+      <a href="https://moonspacelinguistics.github.io/linguisticsdatasci.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Applied Linguistics</a>
       <a href="https://moonspacelinguistics.github.io/publications.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Research</a>
-      <a href="https://moonspacelinguistics.github.io/coursematerial.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Course Material</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Course Material</a>
       <a href="https://moonspacelinguistics.github.io/musings.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Blog Posts</a>
   </div>
-</d
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/index.html#aboutme">About Me</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/linguisticsdatasci.html">Applied Linguistics</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/publications.html">Research & Publications</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Course Material</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://moonspacelinguistics.github.io/musings.html">Blog Posts</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:64px">
+  <h1>Data Science, Applied Linguistics, and Educational Measurement</h1>  
+  <p>This page hosts links to projects that I have been working on.</p>
+
+  <!-- !PAGE CONTENT! -->
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="article">
+    <div class="w3-quarter">
+      <a href="testing2.html"><img src="https://moonspacelinguistics.github.io/pic-vocabsig2026.jpg" class="w3-center" alt="Classroom" style="width:100%"></a>
+      <h3>Sustainable Development</h3>
+      <h4><i>English Level: Advanced</i></h4>
+      <p>A sample of content-based course material that uses YouTube as a resource.</p>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="w3-quarter">
+      <a href="https://drive.google.com/drive/folders/1944_MURKbixNQv5F71dyn5m0yVf0YMCb?usp=drive_link"><img src="https://moonspacelinguistics.github.io/pic-team.jpg" class="w3-center" alt="Classroom" style="width:100%"></a>
+      <h3>Project Management Skills for EFL Students</h3>
+      <h4><i>English Level: Intermediate - Advanced</i></h4>
+      <p>The handouts here are from project-based learning courses and are aimed at helping students develop their project management, team-building, and presentation skills.</p>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="w3-quarter">
+      <a href="https://drive.google.com/drive/folders/10tarQK8ofvGuNHij_3oq8cd8irmh-7gS?usp=drive_link"><img src="https://moonspacelinguistics.github.io/pic-writing.jpg" class="w3-center" alt="Classroom" style="width:100%"></a>
+      <h3>EFL Writing Course</h3>
+      <h4><i>English Level: Intermediate - Advanced</i></h4>
+      <p>A sample of the curriculum for building EFL writing skills through the use of logic and scoring rubrics, some of which were condensed into workshops conducted at JALT.</p>  
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="w3-quarter">
+      <a href="https://drive.google.com/drive/folders/1v4-wTT0v6ZZcMPHOhEkLIbC3MXTR0Ib1?usp=drive_link"><img src="https://moonspacelinguistics.github.io/pic-toefl.jpg" class="w3-center" alt="Classroom" style="width:100%"></a>
+      <h3>TOEFL Preparatory Course</h3>
+      <h4><i>English Level: Intermediate - Advanced</i></h4>
+      <p>A sample of the course material for the TOEFL preparatory course. The goal is to build resilience and metacognition skills while improving students' test-taking skills.</p>
+      <br>
+      <br>
+      <br>
+    </div>
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <a href="https://drive.google.com/file/d/1SDLdDatlDNw9TUvxENH38AqzBqsJeD2S/view"><img src="https://moonspacelinguistics.github.io/sampleteacher.jpg" class="w3-center" alt="Classroom" style="width:100%"></a>
+      <h3>Sample Listening Activity</h3>
+      <h4><i>English Level: Intermediate (adjustable)</i></h4>
+      <p>A sample listening activity that incorporates a wordlist extracted using Python (this was before ChatGPT), task-based learning, and metacognitive awareness.</p>
+      <br>
+      <br>
+      <br>
+      <br>  
+    </div>
+    <div class="w3-quarter">
+      <a href="https://drive.google.com/drive/folders/1qOm9Y8MA9QnFjFWB4e7YO8ecSIlPibun?usp=drive_link"><img src="https://moonspacelinguistics.github.io/pic-logic.jpg" class="w3-center" alt="Classroom" style="width:100%"></a>
+      <h3>Critical thinking skills</h3>
+      <h4><i>English Level: Intermediate - Advanced</i></h4>
+      <p>A sample of the critical thinking skills I taught in academic English classes, some of which were demonstrated at JALT workshops. While recommended for advanced EFL students, some material can be adjusted to the intermediate level.</p>
+      <br>
+      <br>
+      <br>
+      <br>  
+    </div>
+       <div class="w3-quarter">
+      <a href="https://drive.google.com/drive/folders/1uaYPtWmoWKMO-lBk1pRU3vImVSuqg3kT"><img src="https://moonspacelinguistics.github.io/pic-toeic.jpg" class="w3-center" alt="Classroom" style="width:100%"></a>
+      <h3>Introduction to TOEIC</h3>
+      <h4><i>English Level: Beginner - Pre-Intermediate</i></h4>
+      <p>While I typically use selected material from appropriate textbooks, LLMs can be very helpful especially for generating contextualised wordlists. Here are some of the material I have used for students scoring 200-300 points in TOEIC.</p>
+      <br>
+      <br>
+      <br>
+      <br>  
+    </div>
+
+  </div>
+</div>
+
+<!-- End of main content -->
+</div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4><a href="#">Back to top</a></h4>  
+      <a href="https://moonspacelinguistics.github.io/coursematerial.html">Course material</a> © 2025 by <a href="https://www.researchgate.net/profile/Liang-Ye-Tan">Tan Liang Ye</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <div class="floating-box">
+        Made with <a href="https://www.w3schools.com/spaces" target="_blank">W3Schools Spaces</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      </div>
+      <div class="floating-box">
+        Image attributions: <a href="https://openai.com/dall-e-2/">Dall-E-2</a>
+      </div>
+  </footer>
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+</body>
+</html>
